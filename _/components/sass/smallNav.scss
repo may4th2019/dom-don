@@ -17,6 +17,9 @@
     &_block{
       display: grid;
       grid-template-columns: auto 90px;
+
+      display: -ms-grid;
+      -ms-grid-template-columns: auto 90px;
       &-links{
         display: none;
         & p{
@@ -25,8 +28,8 @@
            &:hover{
             @extend %ease;
             color: $pink;
-            border-left: 2px solid $blue-navy;
-            border-right: 2px solid $blue-navy;
+            //border-left: 2px solid $blue-navy;
+            //border-right: 2px solid $blue-navy;
           }
         }
       }//-links

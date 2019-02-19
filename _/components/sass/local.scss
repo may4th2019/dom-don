@@ -161,6 +161,8 @@
     @include martopbot(40px, 40px);
     max-width: 900px;
     display: grid;
+    display: -ms-grid;
+    -ms-grid-template-columns: auto auto;
     grid-template-columns: auto auto;
     &-links{
       border-radius: 50%;

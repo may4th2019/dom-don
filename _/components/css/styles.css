@@ -115,6 +115,8 @@ img.headline {
   margin-bottom: 40px;
   max-width: 900px;
   display: grid;
+  display: -ms-grid;
+  -ms-grid-template-columns: auto auto;
   grid-template-columns: auto auto; }
   .registry_icons-links {
     border-radius: 50%;
@@ -199,15 +201,15 @@ p.fail {
   border-top: 1px solid #13213F; }
   .nav_block {
     display: grid;
-    grid-template-columns: auto 90px; }
+    grid-template-columns: auto 90px;
+    display: -ms-grid;
+    -ms-grid-template-columns: auto 90px; }
     .nav_block-links {
       display: none; }
       .nav_block-links p {
         cursor: pointer; }
         .nav_block-links p:hover {
-          color: #C54699;
-          border-left: 2px solid #13213F;
-          border-right: 2px solid #13213F; }
+          color: #C54699; }
   .nav-trigger {
     background: #13213F;
     margin-top: -6px;
@@ -339,7 +341,9 @@ p.fail {
       border-bottom: 2px solid #CCC7C2;
       display: block; }
       .nav_block-links {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-auto-flow: column;
         grid-auto-flow: column; }
         .nav_block-links a {
           text-decoration: none; }
@@ -366,6 +370,8 @@ p.fail {
 @media only screen and (min-width: 800px) {
   .details {
     display: grid;
+    display: -ms-grid;
+    -ms-grid-template-columns: 1fr 1.2fr 1.1fr;
     grid-template-columns: 1fr 1.2fr 1.1fr;
     margin-top: 50px; }
     .details_story {
@@ -386,8 +392,13 @@ p.fail {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "row1-c1 row1-c2" "row2-c1 row2-c2" "row3-c1 row3-c2"; }
+      grid-template-areas: "row1-c1 row1-c2" "row2-c1 row2-c2" "row3-c1 row3-c2";
+      display: -ms-grid;
+      -ms-grid-template-columns: 1fr 1fr;
+      -ms-grid-template-rows: 1fr 1fr 1fr;
+      -ms-grid-template-areas: "row1-c1 row1-c2" "row2-c1 row2-c2" "row3-c1 row3-c2"; }
       .contact_form-wrapper textarea {
+        -ms-grid-area: row1-c2 /row2-c2 / row3-c2;
         grid-area: row1-c2 /row2-c2 / row3-c2;
         margin-left: 0px; }
     .contact_form input:first-of-type {

@@ -25,7 +25,9 @@
 	    	border-bottom: 2px solid $grey-border;
 	    	display: block;
 	      &-links{
+	        display:-ms-grid;
 	        display: grid;
+	    	-ms-grid-auto-flow: column;
 	    	grid-auto-flow: column;
 	    	& a{
 	    		text-decoration: none;
@@ -66,6 +68,8 @@
  @media only screen and (min-width: 800px){
 	  .details{
 	  	display: grid;
+	  	display: -ms-grid;
+	  	-ms-grid-template-columns: 1fr 1.2fr 1.1fr;
 	  	grid-template-columns: 1fr 1.2fr 1.1fr;
 	  	margin-top: 50px;
 	  	&_story{
@@ -94,7 +98,16 @@
 	        "row1-c1 row1-c2"
 	        "row2-c1 row2-c2"
 	        "row3-c1 row3-c2";
+
+	        display: -ms-grid;
+		  	-ms-grid-template-columns: 1fr 1fr;
+		  	-ms-grid-template-rows: 1fr 1fr 1fr;
+		  	 -ms-grid-template-areas:
+	        "row1-c1 row1-c2"
+	        "row2-c1 row2-c2"
+	        "row3-c1 row3-c2";
 	        & textarea{
+	        	-ms-grid-area: row1-c2 /row2-c2 / row3-c2;
 	        	grid-area: row1-c2 /row2-c2 / row3-c2;
 	        	margin-left: 0px;
 	        }
