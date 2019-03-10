@@ -18,7 +18,7 @@
    $message = $_POST['message'];
 
    // Where to send the info to
-   $to = "russell2shea@gmail.com";
+   $to = "dcummin07@gmail.com";
 
    // Compile the email
    $email_subject = "Message From $name";
