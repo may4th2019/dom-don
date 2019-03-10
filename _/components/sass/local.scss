@@ -62,6 +62,10 @@
          color: $pink;
         }
       }
+      & h2{
+        display: -ms-grid;
+        -ms-grid-column: 1;
+      }
       & h3{
         font-size: 30px;
       }
@@ -162,7 +166,7 @@
     max-width: 900px;
     display: grid;
     display: -ms-grid;
-    -ms-grid-template-columns: auto auto;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: auto auto;
     &-links{
       border-radius: 50%;

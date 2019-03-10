@@ -19,7 +19,7 @@
       grid-template-columns: auto 90px;
 
       display: -ms-grid;
-      -ms-grid-template-columns: auto 90px;
+      -ms-grid-columns: auto 90px;
       &-links{
         display: none;
         & p{
@@ -49,6 +49,8 @@
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       @extend %ease;
+      display: -ms-grid;
+      -ms-grid-column: 2;
 
     }// -trigger
     &-activetrigger{
