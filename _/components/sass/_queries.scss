@@ -103,14 +103,9 @@
 	        "row3-c1 row3-c2";
 
 	        display: -ms-grid;
-		  	-ms-grid-template-columns: 1fr 1fr;
-		  	-ms-grid-template-rows: 1fr 1fr 1fr;
-		  	 -ms-grid-template-areas:
-	        "row1-c1 row1-c2"
-	        "row2-c1 row2-c2"
-	        "row3-c1 row3-c2";
+		  	-ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
 	        & textarea{
-	        	-ms-grid-area: row1-c2 /row2-c2 / row3-c2;
+	        	//-ms-grid-area: row1-c2 /row2-c2 / row3-c2;
 	        	grid-area: row1-c2 /row2-c2 / row3-c2;
 	        	margin-left: 0px;
 	        }
