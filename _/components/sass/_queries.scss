@@ -27,7 +27,6 @@
 	      &-links{
 	        display:-ms-grid;
 	        display: grid;
-	    	-ms-grid-auto-flow: column;
 	    	grid-auto-flow: column;
 	    	& a{
 	    		text-decoration: none;
