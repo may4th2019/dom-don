@@ -117,7 +117,6 @@ img.headline {
   display: grid;
   display: -ms-grid;
   -ms-grid-template-columns: auto auto;
-  -ms-grid-columns: auto auto;
   grid-template-columns: auto auto; }
   .registry_icons-links {
     border-radius: 50%;
@@ -202,7 +201,6 @@ p.fail {
   border-top: 1px solid #13213F; }
   .nav_block {
     display: grid;
-    -ms-grid-columns: auto 90px;
     grid-template-columns: auto 90px;
     display: -ms-grid;
     -ms-grid-template-columns: auto 90px; }
@@ -345,7 +343,8 @@ p.fail {
       .nav_block-links {
         display: -ms-grid;
         display: grid;
-        grid-auto-flow: column; }
+        grid-auto-flow: column;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr; }
         .nav_block-links a {
           text-decoration: none; }
         .nav_block-links a p {
@@ -372,35 +371,33 @@ p.fail {
   .details {
     display: grid;
     display: -ms-grid;
-    -ms-grid-template-columns: 1fr 1.2fr 1.1fr;
     -ms-grid-columns: 1fr 1.2fr 1.1fr;
     grid-template-columns: 1fr 1.2fr 1.1fr;
     margin-top: 50px; }
     .details_story {
       border-bottom: none;
-      padding-right: 20px; }
+      padding-right: 20px;
+      -ms-grid-column: 1; }
     .details_wedding {
       border-left: 2px solid #CCC7C2;
       border-right: 2px solid #CCC7C2;
       border-bottom: none;
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 20px;
+      -ms-grid-column: 2; }
     .details_hotel {
-      padding-left: 30px; }
+      padding-left: 30px;
+      -ms-grid-column: 3; }
   .contact_form {
     padding-top: 0px;
     padding-bottom: 0px; }
     .contact_form-wrapper {
       display: grid;
-      -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "row1-c1 row1-c2" "row2-c1 row2-c2" "row3-c1 row3-c2";
       display: -ms-grid;
-      -ms--ms-grid-columns: 1fr 1fr;
       -ms-grid-template-columns: 1fr 1fr;
-      -ms--ms-grid-rows: 1fr 1fr 1fr;
       -ms-grid-template-rows: 1fr 1fr 1fr;
       -ms-grid-template-areas: "row1-c1 row1-c2" "row2-c1 row2-c2" "row3-c1 row3-c2"; }
       .contact_form-wrapper textarea {

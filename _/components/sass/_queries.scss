@@ -28,6 +28,7 @@
 	        display:-ms-grid;
 	        display: grid;
 	    	grid-auto-flow: column;
+	    	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
 	    	& a{
 	    		text-decoration: none;
 	    	}
@@ -68,12 +69,13 @@
 	  .details{
 	  	display: grid;
 	  	display: -ms-grid;
-	  	-ms-grid-template-columns: 1fr 1.2fr 1.1fr;
+	  	-ms-grid-columns: 1fr 1.2fr 1.1fr;
 	  	grid-template-columns: 1fr 1.2fr 1.1fr;
 	  	margin-top: 50px;
 	  	&_story{
 	  		border-bottom: none;
 	  		padding-right: 20px;
+	  		-ms-grid-column: 1;
 	  	}
 	  	&_wedding{
       		border-left: 2px solid $grey-border;
@@ -81,9 +83,11 @@
       		border-bottom: none;
       		padding-left: 20px;
       		padding-right: 20px;
+      		-ms-grid-column: 2;
   		}
   		&_hotel{
   			padding-left: 30px;
+  			-ms-grid-column: 3;
   		}
 	  }
 	  .contact_form{

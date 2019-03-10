@@ -14,7 +14,6 @@ function scss(done){
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
             browsers: ['last 4 versions'],
-            grid: true,
             cascade: false
         }))
   .pipe(gulp.dest('_/components/css/'))
